@@ -1,0 +1,46 @@
+// Add this SCSS to the modal-add-industry.component.scss file
+
+.modal-content {
+    @apply bg-white rounded-lg shadow-lg p-6 max-w-md w-full;
+  
+    h3 {
+      @apply text-lg font-semibold text-gray-800;
+    }
+  
+    .form-group {
+      @apply mb-4;
+  
+      label {
+        @apply block text-sm font-medium text-gray-700;
+      }
+  
+      input,
+      select {
+        @apply mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500;
+      }
+  
+      .text-red-500 {
+        @apply text-sm mt-1;
+      }
+    }
+  
+    .btn {
+      @apply rounded px-4 py-2;
+  
+      &.cancel {
+        @apply bg-gray-300 text-gray-800 hover:bg-gray-400;
+      }
+  
+      &.addInd {
+        @apply bg-blue-500 text-white hover:bg-blue-600;
+      }
+    }
+  
+    // Add additional custom styles as needed
+  }
+  
+  // Modal Overlay
+  .modal-overlay {
+    @apply fixed inset-0 bg-black opacity-50;
+  }
+  

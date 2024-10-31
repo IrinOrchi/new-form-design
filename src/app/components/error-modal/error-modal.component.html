@@ -1,0 +1,44 @@
+<!-- error-modal.component.html -->
+<div class="fixed z-10 inset-0 overflow-y-auto">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+  
+      <div class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+        <div class="modal-body">
+          <div class="ins-cont">
+            <div class="row">
+              <div class="col-sm-12" id="changeableMsg">
+                <div class="img-wrap">
+                    <img src="../../../../public/warning-rln.png" alt="worning-img">
+                </div>
+                <div class="worn-txt text-red-500 font-bold text-lg">
+                  This RL number and company name do not match with BMET provided member list.
+                </div>
+                <div class="foll-txt text-gray-700">
+                  For these possible reasons, your account was unable to be verified.
+                </div>
+                <div class="foll-txt ins text-gray-700">
+                  Check the following:
+                </div>
+                <ul class="list-disc list-inside">
+                  <li>Check the RL number and company name</li>
+                  <li>Enter the exact name which has been registered in the BMET</li>
+                </ul>
+                <div class="hlp text-gray-600">
+                  For further inquiries, call Customer Support: <i class="icon-phone"></i> 16479
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-sm-12">
+                <div class="btn-wrap">
+                  <a href="javascript:void(0)" class="btn bg-blue-500 text-white px-4 py-2 rounded-md" (click)="closeModal()">OK</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
